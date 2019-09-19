@@ -22,4 +22,16 @@ public class UserTest {
     void testInitials() {
         assertEquals("P.", user.initials());
     }
+
+    void testGetNumber(){
+        assertEquals(23,user.getNumber());
+    }
+
+    void testGetName(){
+        assertEquals("Pablo",user.getName());
+    }
+
+    void testGetFamilyName(){
+        assertEquals("Perez",user.getFamilyName());
+    }
 }
