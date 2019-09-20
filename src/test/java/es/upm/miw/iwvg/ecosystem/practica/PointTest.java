@@ -51,8 +51,22 @@ class PointTest {
     }
 
     @Test
-    void testToString(){
-        point=new Point(3,4);
-        assertEquals("Point{x=3, y=4}",point.toString());
+    void testToString() {
+        point = new Point(3, 4);
+        assertEquals("Point{x=3, y=4}", point.toString());
+    }
+
+    @Test
+    void testSetters() {
+        Point point1 = new Point();
+        point1.setX(2);
+        point1.setY(5);
+    }
+
+    @Test
+    void testDistanceToPoint() {
+        Point point1 = new Point(2, 1);
+        Point point2 = new Point(-3, 2);
+        assertEquals(5.099, point1.distanceToPoint(point2), 10e-5);
     }
 }
