@@ -32,6 +32,13 @@ public class Point {
         this.y -= origin.getY();
     }
 
+    public double distanceToPoint(Point point1) {
+        double leg1 = this.x - point1.getX();
+        double leg2 = this.y - point1.getY();
+        double hypotenuse = Math.sqrt(leg1 * leg1 + leg2 * leg2);
+        return hypotenuse;
+    }
+
     public int getX() {
         return this.x;
     }
