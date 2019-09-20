@@ -24,17 +24,22 @@ public class UserTest {
     }
 
     @Test
-    void testGetNumber(){
-        assertEquals(23,user.getNumber());
+    void testGetNumber() {
+        assertEquals(23, user.getNumber());
     }
 
     @Test
-    void testGetName(){
-        assertEquals("Pablo",user.getName());
+    void testGetName() {
+        assertEquals("Pablo", user.getName());
     }
 
     @Test
-    void testGetFamilyName(){
-        assertEquals("Perez",user.getFamilyName());
+    void testGetFamilyName() {
+        assertEquals("Perez", user.getFamilyName());
+    }
+
+    @Test
+    void testNameUpperCase() {
+        assertEquals("PABLO", user.nameUpperCase());
     }
 }
