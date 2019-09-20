@@ -57,15 +57,10 @@ class PointTest {
     }
 
     @Test
-    void testSetters() {
+    void testDistanceToPoint() {
         Point point1 = new Point();
         point1.setX(2);
-        point1.setY(5);
-    }
-
-    @Test
-    void testDistanceToPoint() {
-        Point point1 = new Point(2, 1);
+        point1.setY(1);
         Point point2 = new Point(-3, 2);
         assertEquals(5.099, point1.distanceToPoint(point2), 10e-5);
     }
