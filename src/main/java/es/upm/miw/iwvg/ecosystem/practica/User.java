@@ -26,6 +26,14 @@ public class User {
         return this.name.substring(0, 1) + ".";
     }
 
+    public String nameUpperCase() {
+        return name.toUpperCase();
+    }
+
+    public String formatFamilyNameName() {
+        return familyName + ", " + name;
+    }
+
     public int getNumber() {
         return this.number;
     }
