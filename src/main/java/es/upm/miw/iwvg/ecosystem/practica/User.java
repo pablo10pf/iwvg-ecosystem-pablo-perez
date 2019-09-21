@@ -30,6 +30,10 @@ public class User {
         return name.toUpperCase();
     }
 
+    public String formatFamilyNameName() {
+        return familyName + ", " + name;
+    }
+
     public int getNumber() {
         return this.number;
     }
