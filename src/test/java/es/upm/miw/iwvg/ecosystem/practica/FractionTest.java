@@ -25,5 +25,9 @@ public class FractionTest {
         assertEquals((double) 3 / 5, fraction.decimal());
     }
 
+    @Test
+    void testToString() {
+        assertEquals("3/5", fraction.toString());
+    }
 
 }

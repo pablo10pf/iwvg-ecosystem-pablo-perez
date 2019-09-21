@@ -27,4 +27,8 @@ public class Fraction {
         return denominator;
     }
 
+    public String toString() {
+        return numerator + "/" + denominator;
+    }
+
 }
