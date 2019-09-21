@@ -27,6 +27,14 @@ public class Fraction {
         return denominator;
     }
 
+    public boolean isGreater(Fraction fraction) {
+        return this.decimal() > fraction.decimal();
+    }
+
+    public boolean isSmaller(Fraction fraction) {
+        return this.decimal() < fraction.decimal();
+    }
+
     public String toString() {
         return numerator + "/" + denominator;
     }
