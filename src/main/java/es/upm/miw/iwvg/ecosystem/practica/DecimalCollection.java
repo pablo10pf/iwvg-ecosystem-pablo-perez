@@ -40,4 +40,8 @@ public class DecimalCollection {
         this.validateIsNullOrEmpty();
         return Collections.min(this.collection);
     }
+
+    public double average() {
+        return this.sum() / this.size();
+    }
 }
