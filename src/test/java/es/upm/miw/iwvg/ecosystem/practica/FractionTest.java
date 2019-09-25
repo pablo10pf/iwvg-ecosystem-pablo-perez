@@ -43,11 +43,4 @@ public class FractionTest {
         assertTrue(fraction.isSmaller(fraction2));
         assertFalse(fraction2.isSmaller(fraction));
     }
-
-    @Test
-    void testSumToDecimal() {
-        Fraction fraction1 = new Fraction(2, 4);
-        Fraction fraction2 = new Fraction(3, 4);
-        assertEquals(1.25, fraction1.sumToDecimal(fraction2), 10e-5);
-    }
 }
